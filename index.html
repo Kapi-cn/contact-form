@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Contact | Acme Support</title>
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+    <h1>Acme Support</h1>
+    <nav aria-label="Main navigation">
+      <a href="#">Home</a>
+      <a href="#">Help</a>
+      <a href="#" aria-current="page">Contact</a>
+    </nav>
+  </header>
+  
+  <!-- Main Section -->
+  <main>
+    <h2>Contact us</h2>
+    <p>Send us a message and we will get back to you.</p>
+    
+    <form action="https://my-domain.com/" method="post">
+      <label for="input-name">Full name</label>
+      <input type="text" name="name" id="input-name" autocomplete="name" required>
+      <br>
+      <label for="input-email">Email</label>
+      <input type="email" name="email" id="input-email" autocomplete="email" required>
+      <br>
+      
+      <label for="select-subject">Subject</label>
+      <select name="subject" id="select-subject" required>
+        <option value="" selected disabled>Choose a topic</option>
+        <option value="general">General Inquiry</option>
+        <option value="support">Technical Support</option>
+        <option value="billing">Billing &amp; Payments</option>
+      </select>
+      <br>
+      
+      <label for="input-message">Message</label>
+      <textarea name="message" id="input-message" cols="30" rows="10" minlength="10" required></textarea>
+      
+      <fieldset>
+        <legend>How did you hear about us?</legend>
+        
+        <input type="radio" name="lead_source" id="radio-search" value="search" required>
+        <label for="radio-search">Search</label>
+        <br>
+        <input type="radio" name="lead_source" id="radio-friend" value="friend" required>
+        <label for="radio-friend">Friend</label>
+        <br>
+        <input type="radio" name="lead_source" id="radio-social" value="social" required>
+        <label for="radio-social">Social media</label>
+      </fieldset>
+      
+      <input type="checkbox" name="newsletter" id="input-newsletter">
+      <label for="input-newsletter">Send me product updates</label>
+      <br>
+      
+      <button type="submit">Send message</button>
+    </form>
+  </main>
+  
+  <!-- Footer Section -->
+  <footer>
+    <small>&copy; 2026 Acme Support</small>
+  </footer>
+</body>
+</html>
